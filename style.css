@@ -9,7 +9,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
     padding: 16px;
 }
 
@@ -31,7 +30,6 @@ nav ul {
     list-style: none;
     justify-content: center;
     align-items: center;
-    width: 100%;
 }
 
 nav ul a {
@@ -41,26 +39,6 @@ nav ul a {
 
 }
 
-/* les boutons dans ma barre  de navigation */
-
-.bouton-panier {
-    display:flex;
-    width: fit-content;
-    height:fit-content;
-    color: white;
-    background-color: blueviolet;
-    border-radius: 8%;
-    text-decoration: none;
-    
-}
-
-#avatar {
-    width: 5%;
-    height: 5%;
-    border: 2px solid black;
-    border-radius: 50%;
-}
-
 /* id pour mon lien panier et mon avatar */
 #panier-avatar {
     display: flex;
@@ -68,58 +46,161 @@ nav ul a {
     gap: 2%;
 }
 
+/* les boutons dans ma barre  de navigation */
+
+.bouton-panier {
+    color: white;
+    background-color: blueviolet;
+    border-radius: 8px;
+    text-decoration: none;
+    width: 8vw;
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+    border:2px solid blueviolet;
+
+}
+
+#avatar {
+    width: 2vw;
+    height: 2vw;
+    border: 2px solid black;
+    border-radius: 50%;
+}
 
 
+
+/* l'image du heros header */
+#heros-header {
+    width: 100%;
+    height: 400px;
+    background-image: url("bg-hero.png");
+    background-size: 100% 100%;
+    background-position: center;
+
+}
+
+#h2-h4-header{
+    color:white;
+}
+
+.decouvrir-transparent {
+   color:blueviolet;
+    background-color: transparent;
+    border-radius: 8px;
+    text-decoration: none;
+    width: 8vw;
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+    border: 2px solid blueviolet;
+}
+
+#decouvrir-position{
+    display:flex;
+    gap:5px;
+    justify-content: center;
+}
 
 
 
 /*CSS dans le body */
-.argent {
-    color: blueviolet;
-
-}
 
 h1 {
+    padding: 2%;
+    margin-top: 0;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-
 }
 
+/* le css dans toutes ma page */
 main {
-
+    width: 100%;
     background-color: beige;
+    margin: 0;
+    padding: 0;
+    border-top: 2px solid grey;
 }
 
 section {
     display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
 
-    gap: 30px;
+
+section article {
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+}
+
+article {
+    background-color: white;
+    width: 24vw;
+
 
 
 }
 
-section article {
-    flex-direction: column;
+article img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* le prix qui est afficher dans l'article */
+.argent {
+
+    margin-right: 13px;
+    color: blueviolet;
+
+}
+
+/* Le nom de la marque et le prix afficher dans l'article  */
+.marque {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
 
 }
 
+/* Le h3 dans l'article */
+.marque-text {
+    margin-left: 13px;
 
-article img {
+}
+
+/* le texte paragraphe dans l'article */
+.paragraphe-article {
+    margin: 0px;
+    margin-left: 13px;
+    margin-right: 13px;
+
+}
+
+/* les boutons ajouter au panier qui sont dans l'article */
+.bouton-ajouter-panier {
     display: flex;
-    width: 20vw;
-    height: 30vh;
-
+    background-color: blueviolet;
+    color: white;
+    border: 2px solid blueviolet;
+    border-radius: 8px;
+    width: 88%;
+    padding: 8px;
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
 
 }
 
 #footer {
+    width: 100%;
     display: flex;
-
+    background-color: beige;
     justify-content: center;
-
+    margin: 0;
 }
